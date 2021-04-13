@@ -14,7 +14,7 @@ app.use(express.json({ extended: false }));
 
 Models
   .sequelize
-  .sync({ force: true })
+  .sync()
   .then(() => console.log('Database connected'))
   .catch(err => console.log('Unable to sync database', err));
 
