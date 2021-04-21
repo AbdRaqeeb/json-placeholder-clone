@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import { errorHandler } from './middleware/error.js'
-import Models from './database/models/index.js';
+import Models from './database/models';
 import 'dotenv/config.js';
 
 import postRouter from './routes/posts.js';

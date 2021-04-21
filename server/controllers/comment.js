@@ -1,5 +1,5 @@
 import asyncHandler from 'express-async-handler'
-import { Post, Comment } from '../database/models/index.js';
+import { Post, Comment } from '../database/models';
 import ErrorResponse from '../utils/errorResponse.js'
 
 
