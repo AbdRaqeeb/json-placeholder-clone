@@ -1,11 +1,11 @@
 import express from 'express';
 import cors from 'cors';
-import { errorHandler } from './server/middleware/error.js'
-import Models from './server/database/models/index.js';
+import { errorHandler } from './middleware/error.js'
+import Models from './database/models';
 import 'dotenv/config.js';
 
-import postRouter from './server/routes/posts.js';
-import commentRouter from './server/routes/comments.js';
+import postRouter from './routes/posts.js';
+import commentRouter from './routes/comments.js';
 
 const app = express();
 
